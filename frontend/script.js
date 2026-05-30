@@ -12,7 +12,7 @@ async function uploadImage() {
     formData.append("file", fileInput.files[0]);
 
     const response = await fetch(
-        "http://127.0.0.1:5000/predict",
+        fetch("https://waste-segregation-assistant1.onrender.com/predict", 
         {
             method: "POST",
             body: formData
