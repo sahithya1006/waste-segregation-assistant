@@ -12,7 +12,7 @@ async function uploadImage() {
     formData.append("file", fileInput.files[0]);
 
     const response = await fetch(
-        fetch("https://waste-segregation-assistant1.onrender.com/predict", 
+        fetch(https://waste-segregation-assistant1.onrender.com/predict", 
         {
             method: "POST",
             body: formData
