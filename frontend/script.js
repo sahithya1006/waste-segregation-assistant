@@ -25,7 +25,7 @@ async function uploadImage() {
             <h3>Suggestion: ${data.suggestion}</h3>
         `;
     } catch (error) {
-        console.error("Error:", error);
-        alert("Backend not reachable. Check connection or server.");
+        console.error(error);
+        alert("Error connecting to backend");
     }
 }
